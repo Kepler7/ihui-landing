@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Fondo opcional (puedes quitarlo si quieres transparente) -->
+  <rect width="256" height="256" rx="48" fill="#0B0B1F"></rect>
+  
+  <!-- H con esquinas redondeadas -->
+  <rect x="56" y="40" width="40" height="176" rx="18" fill="#FFFFFF"></rect>
+  <rect x="160" y="40" width="40" height="176" rx="18" fill="#FFFFFF"></rect>
+  <rect x="96" y="108" width="64" height="40" rx="18" fill="#FFFFFF"></rect>
+</svg>
