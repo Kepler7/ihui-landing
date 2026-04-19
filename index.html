@@ -89,18 +89,23 @@
 <body class="bg-surface font-body text-on-surface antialiased">
 <!-- TopNavBar Navigation Shell -->
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm shadow-blue-900/5 no-border bg-surface-container-low">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex justify-between items-center px-4 sm:px-8 py-4 max-w-7xl mx-auto">
 <div class="text-2xl font-black text-blue-700 dark:text-blue-400 tracking-tighter font-['Manrope']">IHUI</div>
 <div class="hidden md:flex gap-8 items-center">
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#inicio">Inicio</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#solution">Solucion</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#how-it-works">Como Funciona</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#value">Valor</a>
-<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#team">Equipo</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#inicio" data-i18n="nav.home">Inicio</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#solution" data-i18n="nav.solution">Solucion</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#how-it-works" data-i18n="nav.how">Como Funciona</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#value" data-i18n="nav.value">Valor</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#team" data-i18n="nav.team">Equipo</a>
 </div>
-<a href="https://wa.me/5213346451964" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold shadow-md shadow-primary/20 hover:scale-105 transition-transform text-center inline-block">
-                            Contrata Aqui
+<div class="flex items-center gap-2 sm:gap-3">
+<button id="language-toggle" type="button" class="border border-primary/20 text-primary px-3 sm:px-4 py-2 rounded-full text-sm sm:text-base font-bold hover:bg-primary/10 transition-colors" aria-label="Switch language to English" data-i18n-aria-label="language.aria">
+<span data-i18n="language.toggle">English</span>
+</button>
+<a href="https://wa.me/5213346451964" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base font-bold shadow-md shadow-primary/20 hover:scale-105 transition-transform text-center inline-block">
+                            <span data-i18n="cta.hire">Contrata Aqui</span>
                         </a>
+</div>
 </div>
 </nav>
 <main>
@@ -108,20 +113,20 @@
 <section class="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden" id="inicio">
 <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="z-10">
-<span class="label-md text-secondary uppercase tracking-[0.1em] font-bold mb-4 block">Educación con Propósito</span>
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-6">
+<span class="label-md text-secondary uppercase tracking-[0.1em] font-bold mb-4 block" data-i18n="hero.eyebrow">Educación con Propósito</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-6" data-i18n-html="hero.title">
                         <span class="text-primary">IHUI</span> Apoyo educativo <span class="text-primary">inteligente</span> <br>para maestros, tutores y familias
                     </h1>
-<p class="text-on-surface-variant text-xl md:text-2xl max-w-xl mb-10 leading-relaxed">
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-xl mb-10 leading-relaxed" data-i18n-html="hero.body">
                         Transformamos dificultades de la educación en planes de acción personalizados, cerrando la brecha entre el aula y el hogar.<br><br>
                         <span class="italic text-lg md:text-xl">-Aprende asi Enseña asi-</span>
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
 <a href="https://wa.me/5213346451964" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold text-lg signature-gradient shadow-xl shadow-primary/20 hover:scale-105 transition-transform text-center inline-block">
-                            Contrata Aqui
+                            <span data-i18n="cta.hire">Contrata Aqui</span>
                         </a>
 <a href="https://www.instagram.com/reel/DWfgb3NgZaw/?igsh=b2JrbmluNTUyeHl3" target="_blank" rel="noopener noreferrer" class="frosted-glass px-10 py-4 rounded-full font-bold text-primary border border-primary/10 hover:bg-surface-container transition-colors text-center inline-block">
-                            Saber más
+                            <span data-i18n="cta.learnMore">Saber más</span>
                         </a>
 </div>
 </div>
@@ -141,19 +146,19 @@
 <div class="space-y-8">
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-error text-4xl" data-icon="broken_image">broken_image</span>
-<h2 class="font-headline text-3xl font-extrabold">El Problema</h2>
+<h2 class="font-headline text-3xl font-extrabold" data-i18n="problem.title">El Problema</h2>
 </div>
-<p class="text-xl text-on-surface-variant leading-relaxed">
+<p class="text-xl text-on-surface-variant leading-relaxed" data-i18n="problem.body">
                             Existe una desconexión crítica entre la escuela y el hogar. Los reportes escolares suelen ser descriptivos pero no operativos, dejando a padres y maestros sin una ruta clara de intervención.
                         </p>
 <div class="bg-surface-container-highest p-8 rounded-xl space-y-4">
 <div class="flex gap-4 items-start">
 <span class="material-symbols-outlined text-primary" data-icon="warning">warning</span>
-<p class="text-on-surface">Información fragmentada que no llega a la acción.</p>
+<p class="text-on-surface" data-i18n="problem.item1">Información fragmentada que no llega a la acción.</p>
 </div>
 <div class="flex gap-4 items-start">
 <span class="material-symbols-outlined text-primary" data-icon="stress_management">stress_management</span>
-<p class="text-on-surface">Frustración emocional en familias por falta de herramientas.</p>
+<p class="text-on-surface" data-i18n="problem.item2">Frustración emocional en familias por falta de herramientas.</p>
 </div>
 </div>
 </div>
@@ -161,14 +166,14 @@
 <div class="space-y-8 lg:mt-24">
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-secondary text-4xl" data-icon="auto_awesome">auto_awesome</span>
-<h2 class="font-headline text-3xl font-extrabold">La Solución</h2>
+<h2 class="font-headline text-3xl font-extrabold" data-i18n="solution.title">La Solución</h2>
 </div>
-<p class="text-xl text-on-surface-variant leading-relaxed">
+<p class="text-xl text-on-surface-variant leading-relaxed" data-i18n="solution.body">
                             IHUI convierte tus dudas de la educación en una estrategia clara, personalizada y fácil de aplicar... Usamos IA para procesar reportes y generar estrategias pedagógicas aplicables de inmediato.
                         </p>
 <div class="signature-gradient p-8 rounded-xl text-on-primary shadow-xl shadow-primary/20">
-<h3 class="font-bold text-xl mb-4">Del dato al impacto</h3>
-<p class="opacity-90">Para que educar deje de sentirse como un problema
+<h3 class="font-bold text-xl mb-4" data-i18n="solution.cardTitle">Del dato al impacto</h3>
+<p class="opacity-90" data-i18n="solution.cardBody">Para que educar deje de sentirse como un problema
 y se convierta en algo que puedas disfrutar.</p>
 </div>
 </div>
@@ -179,24 +184,24 @@ y se convierta en algo que puedas disfrutar.</p>
 <section class="py-24" id="how-it-works">
 <div class="max-w-7xl mx-auto px-8">
 <div class="text-center mb-16">
-<span class="label-md text-secondary uppercase tracking-[0.1em] font-bold mb-2 block">Proceso Inteligente</span>
-<h2 class="font-headline text-4xl md:text-5xl font-extrabold">Cómo funciona IHUI</h2>
+<span class="label-md text-secondary uppercase tracking-[0.1em] font-bold mb-2 block" data-i18n="how.eyebrow">Proceso Inteligente</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold" data-i18n="how.title">Cómo funciona IHUI</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
 <div class="bg-surface-container p-8 rounded-xl flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
 <span class="text-primary font-black text-4xl opacity-20">01</span>
 <div>
 <span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="description">description</span>
-<h3 class="font-bold text-xl mb-2">Reporte</h3>
-<p class="text-on-surface-variant text-sm">Escribe las señales o las observaciones del padre o maestro a nuestra plataforma segura.</p>
+<h3 class="font-bold text-xl mb-2" data-i18n="how.step1Title">Reporte</h3>
+<p class="text-on-surface-variant text-sm" data-i18n="how.step1Body">Escribe las señales o las observaciones del padre o maestro a nuestra plataforma segura.</p>
 </div>
 </div>
 <div class="bg-surface-container p-8 rounded-xl flex flex-col justify-between hover:translate-y-[-4px] transition-transform">
 <span class="text-primary font-black text-4xl opacity-20">02</span>
 <div>
 <span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="psychology">psychology</span>
-<h3 class="font-bold text-xl mb-2">Análisis</h3>
-<p class="text-on-surface-variant text-sm">Nuestro motor de IA identifica patrones, necesidades y áreas de oportunidad específicas.</p>
+<h3 class="font-bold text-xl mb-2" data-i18n="how.step2Title">Análisis</h3>
+<p class="text-on-surface-variant text-sm" data-i18n="how.step2Body">Nuestro motor de IA identifica patrones, necesidades y áreas de oportunidad específicas.</p>
 </div>
 </div>
 <div class="bg-surface-container-highest p-8 rounded-xl flex flex-col justify-between md:col-span-2 row-span-2 relative overflow-hidden group">
@@ -204,16 +209,16 @@ y se convierta en algo que puedas disfrutar.</p>
 <span class="text-primary font-black text-4xl opacity-20">03</span>
 <div class="relative z-10">
 <span class="material-symbols-outlined text-primary text-5xl mb-6 block" data-icon="hub">hub</span>
-<h3 class="font-bold text-2xl mb-4">Conexión Atrio</h3>
-<p class="text-on-surface-variant text-lg">Unificamos el lenguaje entre casa y colegio para que todos remen en la misma dirección.</p>
+<h3 class="font-bold text-2xl mb-4" data-i18n="how.step3Title">Conexión Atrio</h3>
+<p class="text-on-surface-variant text-lg" data-i18n="how.step3Body">Unificamos el lenguaje entre casa y colegio para que todos remen en la misma dirección.</p>
 </div>
 </div>
 <div class="bg-surface-container p-8 rounded-xl flex flex-col justify-between md:col-span-2 hover:translate-y-[-4px] transition-transform">
 <span class="text-primary font-black text-4xl opacity-20">04</span>
 <div>
 <span class="material-symbols-outlined text-primary text-4xl mb-4 block" data-icon="bolt">bolt</span>
-<h3 class="font-bold text-xl mb-2">Acciones</h3>
-<p class="text-on-surface-variant">Recibe micro-intervenciones, juegos pedagógicos y guías de conversación personalizadas.</p>
+<h3 class="font-bold text-xl mb-2" data-i18n="how.step4Title">Acciones</h3>
+<p class="text-on-surface-variant" data-i18n="how.step4Body">Recibe micro-intervenciones, juegos pedagógicos y guías de conversación personalizadas.</p>
 </div>
 </div>
 </div>
@@ -229,15 +234,15 @@ y se convierta en algo que puedas disfrutar.</p>
 </div>
 <div class="space-y-12">
 <div>
-<h2 class="font-headline text-4xl font-extrabold mb-6">Valor para nuestra comunidad</h2>
+<h2 class="font-headline text-4xl font-extrabold mb-6" data-i18n="value.title">Valor para nuestra comunidad</h2>
 <div class="space-y-6">
 <div class="flex gap-6">
 <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
 <span class="material-symbols-outlined text-primary" data-icon="school">school</span>
 </div>
 <div>
-<h4 class="font-bold text-lg">Para Maestros</h4>
-<p class="text-on-surface-variant">Reducción de carga administrativa y herramientas precisas para aplicar en el aula según las necesidades del grupo.</p>
+<h4 class="font-bold text-lg" data-i18n="value.teachersTitle">Para Maestros</h4>
+<p class="text-on-surface-variant" data-i18n="value.teachersBody">Reducción de carga administrativa y herramientas precisas para aplicar en el aula según las necesidades del grupo.</p>
 </div>
 </div>
 <div class="flex gap-6">
@@ -245,15 +250,15 @@ y se convierta en algo que puedas disfrutar.</p>
 <span class="material-symbols-outlined text-secondary" data-icon="home">home</span>
 </div>
 <div>
-<h4 class="font-bold text-lg">Para Familias</h4>
-<p class="text-on-surface-variant">Tranquilidad emocional y estrategias claras, con indicadores de avance y escalamiento basado en cómo realmente aprende el menor.</p>
+<h4 class="font-bold text-lg" data-i18n="value.familiesTitle">Para Familias</h4>
+<p class="text-on-surface-variant" data-i18n="value.familiesBody">Tranquilidad emocional y estrategias claras, con indicadores de avance y escalamiento basado en cómo realmente aprende el menor.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-l-4 border-tertiary">
-<h3 class="font-headline text-2xl font-bold mb-4">Nuestra Diferenciación</h3>
-<p class="text-on-surface-variant italic">"Somos un sistema de e-learning que entiende el contexto educativo y emocional."</p>
+<h3 class="font-headline text-2xl font-bold mb-4" data-i18n="value.diffTitle">Nuestra Diferenciación</h3>
+<p class="text-on-surface-variant italic" data-i18n="value.diffBody">"Somos un sistema de e-learning que entiende el contexto educativo y emocional."</p>
 </div>
 </div>
 </div>
@@ -263,42 +268,42 @@ y se convierta en algo que puedas disfrutar.</p>
 <section class="py-24">
 <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="md:col-span-2 bg-surface-container-highest p-12 rounded-xl">
-<h2 class="font-headline text-3xl font-extrabold mb-8">Casos de uso clave</h2>
+<h2 class="font-headline text-3xl font-extrabold mb-8" data-i18n="cases.title">Casos de uso clave</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
 <div class="space-y-4">
 <h4 class="font-bold text-error flex items-center gap-2">
 <span class="material-symbols-outlined" data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
-                                Frustración Emocional
+                                <span data-i18n="cases.emotionalTitle">Frustración Emocional</span>
                             </h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">Padres y maestros con dificultades para gestionar la estructura educativa encuentran en IHUI estrategias de resiliencia y validación.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed" data-i18n="cases.emotionalBody">Padres y maestros con dificultades para gestionar la estructura educativa encuentran en IHUI estrategias de resiliencia y validación.</p>
 </div>
 <div class="space-y-4">
 <h4 class="font-bold text-primary flex items-center gap-2">
 <span class="material-symbols-outlined" data-icon="visibility">visibility</span>
-                                Foco y Atención
+                                <span data-i18n="cases.focusTitle">Foco y Atención</span>
                             </h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">Intervenciones breves y dinámicas diseñadas para mejorar los periodos de concentración sin abrumar.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed" data-i18n="cases.focusBody">Intervenciones breves y dinámicas diseñadas para mejorar los periodos de concentración sin abrumar.</p>
 </div>
 <div class="space-y-4">
 <h4 class="font-bold text-secondary flex items-center gap-2">
 <span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
-                                Habilidades Sociales
+                                <span data-i18n="cases.socialTitle">Habilidades Sociales</span>
                             </h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">Guías para maestros sobre cómo integrar dinámicas grupales que fomenten la empatía y colaboración.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed" data-i18n="cases.socialBody">Guías para maestros sobre cómo integrar dinámicas grupales que fomenten la empatía y colaboración.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary p-12 rounded-xl text-on-primary flex flex-col justify-center">
 <span class="material-symbols-outlined text-5xl mb-6" data-icon="verified_user">verified_user</span>
-<h3 class="font-headline text-2xl font-bold mb-4">Enfoque Ético</h3>
-<p class="text-white/90 font-medium leading-relaxed mb-6">Nuestra IA no emite diagnósticos clínicos; empodera a las personas para actuar con sensibilidad. Contamos con el apoyo de expertos para transformar la educación.</p>
+<h3 class="font-headline text-2xl font-bold mb-4" data-i18n="ethics.title">Enfoque Ético</h3>
+<p class="text-white/90 font-medium leading-relaxed mb-6" data-i18n="ethics.body">Nuestra IA no emite diagnósticos clínicos; empodera a las personas para actuar con sensibilidad. Contamos con el apoyo de expertos para transformar la educación.</p>
 <div class="flex items-center gap-2 text-sm font-bold opacity-80">
 <span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
-                        Sin etiquetas clínicas
+                        <span data-i18n="ethics.item1">Sin etiquetas clínicas</span>
                     </div>
 <div class="flex items-center gap-2 text-sm font-bold opacity-80">
 <span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
-                       Sin prejuicios
+                       <span data-i18n="ethics.item2">Sin prejuicios</span>
                     </div>
 </div>
 </div>
@@ -308,27 +313,27 @@ y se convierta en algo que puedas disfrutar.</p>
 <div class="max-w-7xl mx-auto px-8">
 <div class="flex flex-col lg:flex-row gap-12 items-stretch">
 <div class="flex-1 frosted-glass p-10 rounded-xl border border-white/20">
-<h3 class="font-headline text-2xl font-extrabold mb-6">Mercado y Oportunidad</h3>
-<p class="text-on-surface-variant mb-6">El sector EdTech está en expansión masiva. Nuestro <strong>Beachhead</strong> es el nivel preescolar y primaria donde la comunicación familia-escuela es más crítica y frecuente.</p>
+<h3 class="font-headline text-2xl font-extrabold mb-6" data-i18n="market.title">Mercado y Oportunidad</h3>
+<p class="text-on-surface-variant mb-6" data-i18n-html="market.body">El sector EdTech está en expansión masiva. Nuestro <strong>Beachhead</strong> es el nivel preescolar y primaria donde la comunicación familia-escuela es más crítica y frecuente.</p>
 <div class="h-1 bg-primary/10 w-full mb-6">
 <div class="h-1 bg-primary w-2/3"></div>
 </div>
-<p class="text-sm font-bold text-primary uppercase tracking-widest">Crecimiento Proyectado 2026-2027</p>
+<p class="text-sm font-bold text-primary uppercase tracking-widest" data-i18n="market.growth">Crecimiento Proyectado 2026-2027</p>
 </div>
 <div class="flex-1 bg-surface-container-lowest p-10 rounded-xl shadow-sm">
-<h3 class="font-headline text-2xl font-extrabold mb-6">Modelo de Negocio</h3>
+<h3 class="font-headline text-2xl font-extrabold mb-6" data-i18n="business.title">Modelo de Negocio</h3>
 <ul class="space-y-4">
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-secondary" data-icon="payments">payments</span>
-<span>SaaS para Instituciones Educativas</span>
+<span data-i18n="business.item1">SaaS para Instituciones Educativas</span>
 </li>
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-secondary" data-icon="stars">stars</span>
-<span>Planes Premium para Familias</span>
+<span data-i18n="business.item2">Planes Premium para Familias</span>
 </li>
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-secondary" data-icon="rocket_launch">rocket_launch</span>
-<span class="font-bold">Estado: MVP Operativo</span>
+<span class="font-bold" data-i18n="business.item3">Estado: MVP Operativo</span>
 </li>
 </ul>
 </div>
@@ -339,8 +344,8 @@ y se convierta en algo que puedas disfrutar.</p>
 <section class="py-24" id="team">
 <div class="max-w-7xl mx-auto px-8">
 <div class="text-center mb-16">
-<h2 class="font-headline text-4xl font-extrabold mb-4">El Equipo</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Expertos en tecnología y pedagogía unidos para transformar la educación.</p>
+<h2 class="font-headline text-4xl font-extrabold mb-4" data-i18n="team.title">El Equipo</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto" data-i18n="team.body">Expertos en tecnología y pedagogía unidos para transformar la educación.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
 <div class="group text-center">
@@ -349,7 +354,7 @@ y se convierta en algo que puedas disfrutar.</p>
 </div>
 <h4 class="font-bold text-xl">Kepler Velasco</h4>
 <p class="text-primary font-bold text-sm tracking-widest uppercase mb-4">CTO</p>
-<p class="text-on-surface-variant text-sm px-4">Arquitecto de soluciones IA y líder técnico con visión escalable.</p>
+<p class="text-on-surface-variant text-sm px-4" data-i18n="team.kepler">Arquitecto de soluciones IA y líder técnico con visión escalable.</p>
 </div>
 <div class="group text-center">
 <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-surface-container-high transition-all group-hover:border-secondary">
@@ -357,7 +362,7 @@ y se convierta en algo que puedas disfrutar.</p>
 </div>
 <h4 class="font-bold text-xl">Deneb Solano</h4>
 <p class="text-secondary font-bold text-sm tracking-widest uppercase mb-4">CEO</p>
-<p class="text-on-surface-variant text-sm px-4">Estratega educativa enfocada en el impacto social y humano.</p>
+<p class="text-on-surface-variant text-sm px-4" data-i18n="team.deneb">Estratega educativa enfocada en el impacto social y humano.</p>
 </div>
 </div>
 </div>
@@ -366,10 +371,10 @@ y se convierta en algo que puedas disfrutar.</p>
 <section class="py-24 bg-surface">
 <div class="max-w-5xl mx-auto px-8">
 <div class="signature-gradient rounded-[2rem] p-12 md:p-20 text-center text-on-primary shadow-2xl shadow-primary/30">
-<h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 leading-tight">¿Listo para transformar la comunicación de tu colegio?</h2>
-<p class="text-xl opacity-90 mb-12 max-w-2xl mx-auto">Únete a las instituciones que ya están cerrando la brecha educativa con IHUI.</p>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 leading-tight" data-i18n="final.title">¿Listo para transformar la comunicación de tu colegio?</h2>
+<p class="text-xl opacity-90 mb-12 max-w-2xl mx-auto" data-i18n="final.body">Únete a las instituciones que ya están cerrando la brecha educativa con IHUI.</p>
 <a class="inline-block bg-white text-primary px-12 py-5 rounded-full font-extrabold text-xl shadow-xl hover:scale-105 transition-transform active:scale-95" href="https://ihui-app-zjbbs.ondigitalocean.app/login" target="_blank" rel="noopener noreferrer">
-                        Empezar ahora
+                        <span data-i18n="cta.start">Empezar ahora</span>
                     </a>
 </div>
 </div>
@@ -383,12 +388,193 @@ y se convierta en algo que puedas disfrutar.</p>
 <p class="text-slate-500 dark:text-slate-400 max-w-xs">© 2026 IHUI.</p>
 </div>
 <div class="flex flex-wrap gap-x-12 gap-y-4">
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#">Ethical AI</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#">Contact Us</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#" data-i18n="footer.privacy">Política de Privacidad</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#" data-i18n="footer.terms">Términos de Servicio</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#" data-i18n="footer.ethical">IA Ética</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 opacity-80 hover:opacity-100 transition-opacity" href="#" data-i18n="footer.contact">Contáctanos</a>
 </div>
 </div>
 </footer>
 
-```</body></html>
+<script>
+const translations = {
+  es: {
+    "meta.title": "IHUI | Aprende asi Enseña asi",
+    "language.toggle": "English",
+    "language.aria": "Switch language to English",
+    "nav.home": "Inicio",
+    "nav.solution": "Solucion",
+    "nav.how": "Como Funciona",
+    "nav.value": "Valor",
+    "nav.team": "Equipo",
+    "cta.hire": "Contrata Aqui",
+    "cta.learnMore": "Saber más",
+    "cta.start": "Empezar ahora",
+    "hero.eyebrow": "Educación con Propósito",
+    "hero.title": "<span class=\"text-primary\">IHUI</span> Apoyo educativo <span class=\"text-primary\">inteligente</span> <br>para maestros, tutores y familias",
+    "hero.body": "Transformamos dificultades de la educación en planes de acción personalizados, cerrando la brecha entre el aula y el hogar.<br><br><span class=\"italic text-lg md:text-xl\">-Aprende asi Enseña asi-</span>",
+    "problem.title": "El Problema",
+    "problem.body": "Existe una desconexión crítica entre la escuela y el hogar. Los reportes escolares suelen ser descriptivos pero no operativos, dejando a padres y maestros sin una ruta clara de intervención.",
+    "problem.item1": "Información fragmentada que no llega a la acción.",
+    "problem.item2": "Frustración emocional en familias por falta de herramientas.",
+    "solution.title": "La Solución",
+    "solution.body": "IHUI convierte tus dudas de la educación en una estrategia clara, personalizada y fácil de aplicar... Usamos IA para procesar reportes y generar estrategias pedagógicas aplicables de inmediato.",
+    "solution.cardTitle": "Del dato al impacto",
+    "solution.cardBody": "Para que educar deje de sentirse como un problema y se convierta en algo que puedas disfrutar.",
+    "how.eyebrow": "Proceso Inteligente",
+    "how.title": "Cómo funciona IHUI",
+    "how.step1Title": "Reporte",
+    "how.step1Body": "Escribe las señales o las observaciones del padre o maestro a nuestra plataforma segura.",
+    "how.step2Title": "Análisis",
+    "how.step2Body": "Nuestro motor de IA identifica patrones, necesidades y áreas de oportunidad específicas.",
+    "how.step3Title": "Conexión Atrio",
+    "how.step3Body": "Unificamos el lenguaje entre casa y colegio para que todos remen en la misma dirección.",
+    "how.step4Title": "Acciones",
+    "how.step4Body": "Recibe micro-intervenciones, juegos pedagógicos y guías de conversación personalizadas.",
+    "value.title": "Valor para nuestra comunidad",
+    "value.teachersTitle": "Para Maestros",
+    "value.teachersBody": "Reducción de carga administrativa y herramientas precisas para aplicar en el aula según las necesidades del grupo.",
+    "value.familiesTitle": "Para Familias",
+    "value.familiesBody": "Tranquilidad emocional y estrategias claras, con indicadores de avance y escalamiento basado en cómo realmente aprende el menor.",
+    "value.diffTitle": "Nuestra Diferenciación",
+    "value.diffBody": "\"Somos un sistema de e-learning que entiende el contexto educativo y emocional.\"",
+    "cases.title": "Casos de uso clave",
+    "cases.emotionalTitle": "Frustración Emocional",
+    "cases.emotionalBody": "Padres y maestros con dificultades para gestionar la estructura educativa encuentran en IHUI estrategias de resiliencia y validación.",
+    "cases.focusTitle": "Foco y Atención",
+    "cases.focusBody": "Intervenciones breves y dinámicas diseñadas para mejorar los periodos de concentración sin abrumar.",
+    "cases.socialTitle": "Habilidades Sociales",
+    "cases.socialBody": "Guías para maestros sobre cómo integrar dinámicas grupales que fomenten la empatía y colaboración.",
+    "ethics.title": "Enfoque Ético",
+    "ethics.body": "Nuestra IA no emite diagnósticos clínicos; empodera a las personas para actuar con sensibilidad. Contamos con el apoyo de expertos para transformar la educación.",
+    "ethics.item1": "Sin etiquetas clínicas",
+    "ethics.item2": "Sin prejuicios",
+    "market.title": "Mercado y Oportunidad",
+    "market.body": "El sector EdTech está en expansión masiva. Nuestro <strong>Beachhead</strong> es el nivel preescolar y primaria donde la comunicación familia-escuela es más crítica y frecuente.",
+    "market.growth": "Crecimiento Proyectado 2026-2027",
+    "business.title": "Modelo de Negocio",
+    "business.item1": "SaaS para Instituciones Educativas",
+    "business.item2": "Planes Premium para Familias",
+    "business.item3": "Estado: MVP Operativo",
+    "team.title": "El Equipo",
+    "team.body": "Expertos en tecnología y pedagogía unidos para transformar la educación.",
+    "team.kepler": "Arquitecto de soluciones IA y líder técnico con visión escalable.",
+    "team.deneb": "Estratega educativa enfocada en el impacto social y humano.",
+    "final.title": "¿Listo para transformar la comunicación de tu colegio?",
+    "final.body": "Únete a las instituciones que ya están cerrando la brecha educativa con IHUI.",
+    "footer.privacy": "Política de Privacidad",
+    "footer.terms": "Términos de Servicio",
+    "footer.ethical": "IA Ética",
+    "footer.contact": "Contáctanos"
+  },
+  en: {
+    "meta.title": "IHUI | Learn this way, teach this way",
+    "language.toggle": "Español",
+    "language.aria": "Cambiar idioma a español",
+    "nav.home": "Home",
+    "nav.solution": "Solution",
+    "nav.how": "How It Works",
+    "nav.value": "Value",
+    "nav.team": "Team",
+    "cta.hire": "Hire Us",
+    "cta.learnMore": "Learn more",
+    "cta.start": "Start now",
+    "hero.eyebrow": "Education With Purpose",
+    "hero.title": "<span class=\"text-primary\">IHUI</span> Intelligent <span class=\"text-primary\">educational</span> support <br>for teachers, tutors, and families",
+    "hero.body": "We turn educational challenges into personalized action plans, closing the gap between classroom and home.<br><br><span class=\"italic text-lg md:text-xl\">-Learn this way, teach this way-</span>",
+    "problem.title": "The Problem",
+    "problem.body": "There is a critical disconnect between school and home. School reports are often descriptive but not actionable, leaving parents and teachers without a clear path for intervention.",
+    "problem.item1": "Fragmented information that never turns into action.",
+    "problem.item2": "Emotional frustration in families caused by a lack of tools.",
+    "solution.title": "The Solution",
+    "solution.body": "IHUI turns your education questions into a clear, personalized, easy-to-apply strategy. We use AI to process reports and generate educational strategies that can be used right away.",
+    "solution.cardTitle": "From data to impact",
+    "solution.cardBody": "So educating stops feeling like a problem and becomes something you can enjoy.",
+    "how.eyebrow": "Intelligent Process",
+    "how.title": "How IHUI works",
+    "how.step1Title": "Report",
+    "how.step1Body": "Write the signs or observations from a parent or teacher into our secure platform.",
+    "how.step2Title": "Analysis",
+    "how.step2Body": "Our AI engine identifies specific patterns, needs, and areas of opportunity.",
+    "how.step3Title": "Atrio Connection",
+    "how.step3Body": "We unify the language between home and school so everyone moves in the same direction.",
+    "how.step4Title": "Actions",
+    "how.step4Body": "Receive micro-interventions, educational games, and personalized conversation guides.",
+    "value.title": "Value for our community",
+    "value.teachersTitle": "For Teachers",
+    "value.teachersBody": "Less administrative load and precise tools to use in the classroom according to the group's needs.",
+    "value.familiesTitle": "For Families",
+    "value.familiesBody": "Emotional clarity and practical strategies, with progress indicators and support based on how each child actually learns.",
+    "value.diffTitle": "What Makes Us Different",
+    "value.diffBody": "\"We are an e-learning system that understands the educational and emotional context.\"",
+    "cases.title": "Key use cases",
+    "cases.emotionalTitle": "Emotional Frustration",
+    "cases.emotionalBody": "Parents and teachers struggling to manage educational structure find resilience and validation strategies in IHUI.",
+    "cases.focusTitle": "Focus and Attention",
+    "cases.focusBody": "Short, dynamic interventions designed to improve concentration periods without overwhelming anyone.",
+    "cases.socialTitle": "Social Skills",
+    "cases.socialBody": "Guides for teachers on integrating group dynamics that foster empathy and collaboration.",
+    "ethics.title": "Ethical Approach",
+    "ethics.body": "Our AI does not issue clinical diagnoses; it empowers people to act with sensitivity. We work with expert support to transform education.",
+    "ethics.item1": "No clinical labels",
+    "ethics.item2": "No prejudice",
+    "market.title": "Market and Opportunity",
+    "market.body": "The EdTech sector is expanding rapidly. Our <strong>beachhead</strong> is preschool and elementary education, where family-school communication is most critical and frequent.",
+    "market.growth": "Projected Growth 2026-2027",
+    "business.title": "Business Model",
+    "business.item1": "SaaS for Educational Institutions",
+    "business.item2": "Premium Plans for Families",
+    "business.item3": "Status: Operational MVP",
+    "team.title": "The Team",
+    "team.body": "Technology and pedagogy experts united to transform education.",
+    "team.kepler": "AI solutions architect and technical leader with scalable vision.",
+    "team.deneb": "Educational strategist focused on social and human impact.",
+    "final.title": "Ready to transform communication at your school?",
+    "final.body": "Join the institutions already closing the education gap with IHUI.",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Service",
+    "footer.ethical": "Ethical AI",
+    "footer.contact": "Contact Us"
+  }
+};
+
+const languageToggle = document.getElementById("language-toggle");
+
+function setLanguage(language) {
+  const dictionary = translations[language] || translations.es;
+
+  document.documentElement.lang = language;
+  document.title = dictionary["meta.title"];
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    if (dictionary[key]) {
+      element.textContent = dictionary[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-html");
+    if (dictionary[key]) {
+      element.innerHTML = dictionary[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const key = element.getAttribute("data-i18n-aria-label");
+    if (dictionary[key]) {
+      element.setAttribute("aria-label", dictionary[key]);
+    }
+  });
+
+  localStorage.setItem("ihui-language", language);
+}
+
+languageToggle.addEventListener("click", () => {
+  const nextLanguage = document.documentElement.lang === "es" ? "en" : "es";
+  setLanguage(nextLanguage);
+});
+
+setLanguage(localStorage.getItem("ihui-language") || "es");
+</script>
+</body></html>
